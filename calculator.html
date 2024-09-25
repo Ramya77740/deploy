@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .call{
+            border-color: rgb(76, 158, 158);
+        }
+    </style>
+</head>
+<body>
+    <div id="call">
+    <input type="text" id="display"><br>
+    <button onclick="addvalue(1)" id="one">1</button>
+    <button onclick="addvalue(2)"id="two">2</button>
+    <button onclick="addvalue(3)" id="three">3</button>
+    <button onclick="addvalue('*')" id="three1">x</button>
+    <br>
+    <button onclick="addvalue(4)" id="four">4</button>
+    <button onclick="addvalue(5)" id="five">5</button>
+    <button onclick="addvalue(6)" id="six">6</button>
+    <button onclick="addvalue('/')" id="divide">/</button>
+    <br>
+    <button onclick="addvalue(7)" id="seven">7</button>
+    <button onclick="addvalue(8)" id="eight">8</button>
+    <button onclick="addvalue(9)" id="nine">9</button>
+    <button onclick="addvalue('-')" id="sub">-</button>
+    <br>
+    <button onclick="addvalue(0)" id="ten">0</button>
+    <button onclick="addvalue('+')" id="plus">+</button>
+    <button onclick="result()" id="equal">=</button>
+    <button onclick="clearDisplay()" id="ac">Ac</button>
+    <p id="p1"></p>
+    </div>
+    <script>
+        let call=document.getElementById("call")
+         call.style.border="2px solid black"
+         call.style.height="250px"
+         call.style.width="200px"
+         call.style.marginLeft="150px"
+         call.style.borderColor="pink"
+         call.style.backgroundColor="pink"
+         call.style.borderBottomLeftRadius="50px"
+         call.style.borderBottomRightRadius="50px"
+         call.style.borderTopLeftRadius="50px"
+         call.style.borderTopRightRadius="50px"
+
+         let display=document.getElementById("display")
+         display.style.marginLeft="15px"
+         display.style.marginTop="30px"
+
+        let one=document.getElementById("one")
+        one.style.marginLeft="20px"
+        one.style.marginTop="30px"
+        one.style.color="red"
+        one.style.backgroundColor="lightblue"
+        one.style.borderColor="lightblue"
+
+         let two=document.getElementById("two")
+        two.style.marginLeft="20px"
+        two.style.color="red"
+        two.style.backgroundColor="lightblue"
+        two.style.borderColor="lightblue"
+
+        let three=document.getElementById("three")
+        three.style.marginLeft="20px"
+        three.style.color="red"
+        three.style.backgroundColor="lightblue"
+        three.style.borderColor="lightblue"
+
+        let three1=document.getElementById("three1")
+        three1.style.marginLeft="20px"
+        three1.style.color="red"
+        three1.style.backgroundColor="lightblue"
+        three1.style.borderColor="lightblue"
+
+        let four=document.getElementById("four")
+        four.style.marginLeft="20px"
+        four.style.marginTop="20px"
+        four.style.color="red"
+        four.style.backgroundColor="lightblue"
+        four.style.borderColor="lightblue"
+
+         let five=document.getElementById("five")
+        five.style.marginLeft="20px"
+        five.style.color="red"
+        five.style.backgroundColor="lightblue"
+        five.style.borderColor="lightblue"
+
+        let six=document.getElementById("six")
+        six.style.marginLeft="20px"
+        six.style.color="red"
+        six.style.backgroundColor="lightblue"
+        six.style.borderColor="lightblue"
+
+        let divide=document.getElementById("divide")
+        divide.style.marginLeft="20px"
+        divide.style.color="red"
+        divide.style.backgroundColor="lightblue"
+        divide.style.borderColor="lightblue"
+
+
+        let seven=document.getElementById("seven")
+        seven.style.marginLeft="20px"
+        seven.style.marginTop="20px"
+        seven.style.color="red"
+        seven.style.backgroundColor="lightblue"
+        seven.style.borderColor="lightblue"
+
+         let eight=document.getElementById("eight")
+        eight.style.marginLeft="20px"
+        eight.style.color="red"
+        eight.style.backgroundColor="lightblue"
+        eight.style.borderColor="lightblue"
+
+        let nine=document.getElementById("nine")
+        nine.style.marginLeft="20px"
+        nine.style.color="red"
+        nine.style.backgroundColor="lightblue"
+        nine.style.borderColor="lightblue"
+
+        let sub=document.getElementById("sub")
+        sub.style.marginLeft="20px"
+        sub.style.color="red"
+        sub.style.backgroundColor="lightblue"
+        sub.style.borderColor="lightblue"
+        
+        let zero=document.getElementById("ten")
+        zero.style.marginLeft="20px"
+        zero.style.marginTop="20px"
+        zero.style.color="red"
+        zero.style.backgroundColor="lightblue"
+        zero.style.borderColor="lightblue"
+
+         let plus=document.getElementById("plus")
+        plus.style.marginLeft="20px"
+        plus.style.color="red"
+        plus.style.backgroundColor="lightblue"
+        plus.style.borderColor="lightblue"
+
+        let equal=document.getElementById("equal")
+        equal.style.marginLeft="20px"
+        equal.style.color="red"
+        equal.style.backgroundColor="lightblue"
+        equal.style.borderColor="lightblue"
+
+         let ac=document.getElementById("ac")
+        ac.style.marginLeft="20px"
+        ac.style.color="red"
+        ac.style.backgroundColor="lightblue"
+        ac.style.borderColor="lightblue"
+        
+
+        let p=document.getElementById("p1")
+        let exp=document.getElementById("display")
+        exp.style.borderColor="pink"
+        function addvalue(x){
+            exp.value+=x;
+        }
+        function result(){
+            let cal=eval(exp.value);
+            exp.value=cal;
+        }
+        function clearDisplay(){
+              display.value= '';
+        }
+    </script>
+</body>
+</html>
