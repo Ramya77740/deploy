@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="pg1">pg1</button>
+    <button id="pg2">pg2</button>
+    <button id="pg3">pg3</button>
+    <button id="back">come back</button>
+    <button id="frword">forward</button>
+    <script>
+        let pg1=document.getElementById("pg1")
+        let pg2=document.getElementById("pg2")
+        let pg3=document.getElementById("pg3")
+        let back=document.getElementById("back")
+        let forward=document.getElementById("frword")
+        pg1.addEventListener("click",()=>{
+            location.assign("https://www.w3schools.com/")})
+        forward.addEventListener("click",()=>{
+            history.forward();
+            })
+         pg2.addEventListener("click",()=>{
+                location.assign("https://www.w3schools.com/js/default.asp")})
+                pg3.addEventListener("click",()=>{
+                    location.assign("https://code.visualstudio.com/")})
+        
+    </script>
+</body>
+</html>
